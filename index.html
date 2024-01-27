@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="./assets/alura-logo.svg" alt="Logo da Alura" />
+
+      <img src="./assets/sun.svg" alt="Ilustração do Sol">
     </header>
 
-    <main>
-      <section>
-        <textarea placeholder="Digite seu texto"></textarea>
+    <main class="decoder">
+      <section class="decoder__form">
+        <textarea id="decoder__form__textarea" placeholder="Digite seu texto"></textarea>
 
-        <p>
-          <img src="./assets/alert-icon.svg" alt="Icone de alerta" />
-          Apenas letras minúsculas e sem acentos.
+        <p class="decoder__form__alert">
+          <img src="./assets/alert-icon.svg" alt="Ícone de alerta" />
+          Apenas letras minúsculas e sem acento.
         </p>
 
-        <div>
-          <button type="button">Criptografar</button>
-          <button type="button">Descriptografar</button>
+        <div class="decoder__form__buttons">
+          <button class="decoder__button decoder__button--encrypt" type="button">Criptografar</button>
+          <button class="decoder__button decoder__button--decrypt" type="button">Descriptografar</button>
         </div>
       </section>
 
-      <section>
-        <h2>Nenhuma mensagem encontrada</h2>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      <section class="decoder__result">
+        <h2 class="decoder__result__title">Nenhuma mensagem encontrada</h2>
+        <p class="decoder__result__text">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
       </section>
     </main>
   </body>
